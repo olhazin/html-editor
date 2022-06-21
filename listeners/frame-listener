@@ -1,0 +1,11 @@
+public class FrameListener extends WindowAdapter {
+    private View view;
+
+    public FrameListener(View view) {
+        this.view = view;
+    }
+
+    public void windowClosing(WindowEvent windowEvent) {
+        view.exit();
+    }
+}
